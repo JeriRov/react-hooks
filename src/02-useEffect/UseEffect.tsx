@@ -1,5 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 
+import { ScreenResizeChecker } from './ScreenResizeChecker';
+
 export const UseEffect: FC = () => {
   const [resourceType, setResourceType] = useState('posts');
   const [items, setItems] = useState([]);
@@ -16,6 +18,7 @@ export const UseEffect: FC = () => {
 
   return (
     <>
+      <ScreenResizeChecker />
       <div>
         <button onClick={handlePosts}>Posts</button>
         <button onClick={handleUsers}>Users</button>

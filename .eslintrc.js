@@ -29,7 +29,6 @@ const REACT_RULES = {
 
 const ESLINT_RULES = {
   'object-shorthand': ERROR,
-  'no-magic-numbers': [ERROR, { ignoreArrayIndexes: true, ignore: [1, 0, -1] }],
 };
 
 const TYPESCRIPT_RULES = {
