@@ -6,6 +6,8 @@ import { UseContext } from './03-useContext/UseContext';
 import { UseRef } from './04-useRef/UseRef';
 import { UseMemo } from './05-useMemo/UseMemo';
 import { UseCallback } from './06-useCallback/UseCallback';
+import { NumberIncrementor } from './07-useReducer/NumberIncrementor';
+import { Todo } from './07-useReducer/Todo';
 import { UseReducer } from './07-useReducer/UseReducer';
 import { UseTransition } from './08-useTransition/UseTransition';
 import { UseDeferredValue } from './09-useDeferredValue/UseDeferredValue';
@@ -56,6 +58,14 @@ export const router: Record<string, RouteItem> = {
     path: '/useReducer',
     Element: UseReducer,
     hook: true,
+  },
+  numberIncrementor: {
+    path: '/number-incrementor',
+    Element: NumberIncrementor,
+  },
+  todo: {
+    path: '/todo',
+    Element: Todo,
   },
   useTransition: {
     path: '/useTransition',

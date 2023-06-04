@@ -13,7 +13,7 @@ export const Main: FC = () => {
 
   useEffect(() => {
     setRoutes(Object.values(router).filter(item => item.hook));
-  }, [routes]);
+  }, []);
 
   return (
     <div>
