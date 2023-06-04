@@ -11,6 +11,8 @@ import { Todo } from './07-useReducer/Todo';
 import { UseReducer } from './07-useReducer/UseReducer';
 import { UseTransition } from './08-useTransition/UseTransition';
 import { UseDeferredValue } from './09-useDeferredValue/UseDeferredValue';
+import { UseLayoutEffect } from './10-useLayoutEffect/UseLayoutEffect';
+import { UseDebugValue } from './11-useDebugValue/UseDebugValue';
 import { Main } from './Main/Main';
 
 interface RouteItem {
@@ -75,6 +77,16 @@ export const router: Record<string, RouteItem> = {
   useDeferredValue: {
     path: '/useDeferredValue',
     Element: UseDeferredValue,
+    hook: true,
+  },
+  useLayoutEffect: {
+    path: '/useLayoutEffect',
+    Element: UseLayoutEffect,
+    hook: true,
+  },
+  useDebugValue: {
+    path: '/useDebugValue',
+    Element: UseDebugValue,
     hook: true,
   },
 };
