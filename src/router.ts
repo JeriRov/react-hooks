@@ -15,6 +15,7 @@ import { UseLayoutEffect } from './10-useLayoutEffect/UseLayoutEffect';
 import { UseDebugValue } from './11-useDebugValue/UseDebugValue';
 import { UseImperativeHandle } from './12-useImperativeHandle/UseImperativeHandle';
 import { UseId } from './13-useId/UseId';
+import { CustomHook } from './14-how-to-create-custom-hooks/CustomHook';
 import { Main } from './Main/Main';
 
 interface RouteItem {
@@ -99,6 +100,11 @@ export const router: Record<string, RouteItem> = {
   useId: {
     path: '/useId',
     Element: UseId,
+    hook: true,
+  },
+  customHook: {
+    path: '/customHook',
+    Element: CustomHook,
     hook: true,
   },
 };
