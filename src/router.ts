@@ -13,6 +13,7 @@ import { UseTransition } from './08-useTransition/UseTransition';
 import { UseDeferredValue } from './09-useDeferredValue/UseDeferredValue';
 import { UseLayoutEffect } from './10-useLayoutEffect/UseLayoutEffect';
 import { UseDebugValue } from './11-useDebugValue/UseDebugValue';
+import { UseImperativeHandle } from './12-useImperativeHandle/UseImperativeHandle';
 import { Main } from './Main/Main';
 
 interface RouteItem {
@@ -87,6 +88,11 @@ export const router: Record<string, RouteItem> = {
   useDebugValue: {
     path: '/useDebugValue',
     Element: UseDebugValue,
+    hook: true,
+  },
+  useImperativeHandle: {
+    path: '/useImperativeHandle',
+    Element: UseImperativeHandle,
     hook: true,
   },
 };
