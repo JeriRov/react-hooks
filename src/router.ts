@@ -14,6 +14,7 @@ import { UseDeferredValue } from './09-useDeferredValue/UseDeferredValue';
 import { UseLayoutEffect } from './10-useLayoutEffect/UseLayoutEffect';
 import { UseDebugValue } from './11-useDebugValue/UseDebugValue';
 import { UseImperativeHandle } from './12-useImperativeHandle/UseImperativeHandle';
+import { UseId } from './13-useId/UseId';
 import { Main } from './Main/Main';
 
 interface RouteItem {
@@ -93,6 +94,11 @@ export const router: Record<string, RouteItem> = {
   useImperativeHandle: {
     path: '/useImperativeHandle',
     Element: UseImperativeHandle,
+    hook: true,
+  },
+  useId: {
+    path: '/useId',
+    Element: UseId,
     hook: true,
   },
 };
