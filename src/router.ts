@@ -15,13 +15,16 @@ import { UseLayoutEffect } from './10-useLayoutEffect/UseLayoutEffect';
 import { UseDebugValue } from './11-useDebugValue/UseDebugValue';
 import { UseImperativeHandle } from './12-useImperativeHandle/UseImperativeHandle';
 import { UseId } from './13-useId/UseId';
-import { CustomHook } from './14-how-to-create-custom-hooks/CustomHook';
+import { CreateCustomHook } from './14-how-to-create-custom-hooks/CreateCustomHook';
+import { ToggleComponent } from './15-20-custom-hooks/1-useToggle/ToggleComponent';
+import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
 
 interface RouteItem {
   path: string;
   Element: FC;
   hook?: boolean;
+  customHook?: boolean;
 }
 
 export const router: Record<string, RouteItem> = {
@@ -104,7 +107,17 @@ export const router: Record<string, RouteItem> = {
   },
   customHook: {
     path: '/customHook',
-    Element: CustomHook,
+    Element: CreateCustomHook,
     hook: true,
+  },
+  customHooks: {
+    path: '/customHooks',
+    Element: CustomHooks,
+    hook: true,
+  },
+  useToggle: {
+    path: '/useToggle',
+    Element: ToggleComponent,
+    customHook: true,
   },
 };
