@@ -18,6 +18,7 @@ import { UseId } from './13-useId/UseId';
 import { CreateCustomHook } from './14-how-to-create-custom-hooks/CreateCustomHook';
 import { ToggleComponent } from './15-20-custom-hooks/1-useToggle/ToggleComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
+import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
 
@@ -124,6 +125,11 @@ export const router: Record<string, RouteItem> = {
   useTimeout: {
     path: '/useTimeout',
     Element: TimeoutComponent,
+    customHook: true,
+  },
+  useDebounce: {
+    path: '/useDebounce',
+    Element: DebounceComponent,
     customHook: true,
   },
 };
