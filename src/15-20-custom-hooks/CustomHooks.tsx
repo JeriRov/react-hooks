@@ -4,11 +4,11 @@ import { RenderLinks } from '../RenderLinks/RenderLinks';
 import { RoutesParams } from '../RenderLinks/renderLinks.types';
 import { router } from '../router';
 
-export const Main: FC = () => {
+export const CustomHooks: FC = () => {
   const [routes, setRoutes] = useState<RoutesParams[]>();
 
   useEffect(() => {
-    setRoutes(Object.values(router).filter(item => item.hook));
+    setRoutes(Object.values(router).filter(item => item.customHook));
   }, []);
 
   return (

@@ -3,7 +3,7 @@ import { ChangeEvent, FC } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 import { useUpdateLogger } from './useUpdateLogger';
 
-export const CustomHook: FC = () => {
+export const CreateCustomHook: FC = () => {
   const [name, setName] = useLocalStorage('name', '');
   useUpdateLogger(name);
   const handleChange = (event: ChangeEvent<HTMLInputElement>) =>
