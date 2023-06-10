@@ -23,6 +23,7 @@ import { DeepCompareEffectComponent } from './15-20-custom-hooks/12-useDeepCompa
 import { EventListenerComponent } from './15-20-custom-hooks/13-useEventListener/EventListenerComponent';
 import { OnScreenComponent } from './15-20-custom-hooks/14-useOnScreen/OnScreenComponent';
 import { WindowSizeComponent } from './15-20-custom-hooks/15-useWindowSize/WindowSizeComponent';
+import { MediaQueryComponent } from './15-20-custom-hooks/16-useMediaQuery/MediaQueryComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -202,6 +203,11 @@ export const router: Record<string, RouteItem> = {
   useWindowSize: {
     path: '/useWindowSize',
     Element: WindowSizeComponent,
+    customHook: true,
+  },
+  useMediaQuery: {
+    path: '/useMediaQuery',
+    Element: MediaQueryComponent,
     customHook: true,
   },
 };
