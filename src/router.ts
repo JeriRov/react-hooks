@@ -28,6 +28,7 @@ import { GeolocationComponent } from './15-20-custom-hooks/17-useGeolocation/Geo
 import { StateWithValidationComponent } from './15-20-custom-hooks/18-useStateWithValidation/StateWithValidationComponent';
 import { SizeComponent } from './15-20-custom-hooks/19-useSize/SizeComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
+import { EffectOnceComponent } from './15-20-custom-hooks/20-useEffectOnce/EffectOnceComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -226,6 +227,11 @@ export const router: Record<string, RouteItem> = {
   useSize: {
     path: '/useSize',
     Element: SizeComponent,
+    customHook: true,
+  },
+  useEffectOnce: {
+    path: '/useEffectOnce',
+    Element: EffectOnceComponent,
     customHook: true,
   },
 };
