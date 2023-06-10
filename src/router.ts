@@ -20,6 +20,7 @@ import { ToggleComponent } from './15-20-custom-hooks/1-useToggle/ToggleComponen
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
+import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
 import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
 
@@ -136,6 +137,11 @@ export const router: Record<string, RouteItem> = {
   useUpdateEffect: {
     path: '/useUpdateEffect',
     Element: UpdateEffectComponent,
+    customHook: true,
+  },
+  useArray: {
+    path: '/useArray',
+    Element: ArrayComponent,
     customHook: true,
   },
 };
