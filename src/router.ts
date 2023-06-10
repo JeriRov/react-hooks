@@ -22,6 +22,7 @@ import { ScriptComponent } from './15-20-custom-hooks/11-useScript/ScriptCompone
 import { DeepCompareEffectComponent } from './15-20-custom-hooks/12-useDeepCompareEffect/DeepCompareEffectComponent';
 import { EventListenerComponent } from './15-20-custom-hooks/13-useEventListener/EventListenerComponent';
 import { OnScreenComponent } from './15-20-custom-hooks/14-useOnScreen/OnScreenComponent';
+import { WindowSizeComponent } from './15-20-custom-hooks/15-useWindowSize/WindowSizeComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -196,6 +197,11 @@ export const router: Record<string, RouteItem> = {
   useOnScreen: {
     path: '/useOnScreen',
     Element: OnScreenComponent,
+    customHook: true,
+  },
+  useWindowSize: {
+    path: '/useWindowSize',
+    Element: WindowSizeComponent,
     customHook: true,
   },
 };
