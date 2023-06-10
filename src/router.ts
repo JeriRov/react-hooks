@@ -32,6 +32,7 @@ import { EffectOnceComponent } from './15-20-custom-hooks/20-useEffectOnce/Effec
 import { ClickOutsideComponent } from './15-20-custom-hooks/21-useClickOutside/ClickOutsideComponent';
 import { DarkModeComponent } from './15-20-custom-hooks/22-useDarkMode/DarkModeComponent';
 import { CopyToClipboardComponent } from './15-20-custom-hooks/23-useCopyToClipboard/CopyToClipboardComponent';
+import { CookieComponent } from './15-20-custom-hooks/24-useCookie/CookieComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -250,6 +251,11 @@ export const router: Record<string, RouteItem> = {
   useCopyToClipboard: {
     path: '/useCopyToClipboard',
     Element: CopyToClipboardComponent,
+    customHook: true,
+  },
+  useCookie: {
+    path: '/useCookie',
+    Element: CookieComponent,
     customHook: true,
   },
 };
