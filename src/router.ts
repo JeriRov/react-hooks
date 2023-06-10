@@ -34,6 +34,7 @@ import { DarkModeComponent } from './15-20-custom-hooks/22-useDarkMode/DarkModeC
 import { CopyToClipboardComponent } from './15-20-custom-hooks/23-useCopyToClipboard/CopyToClipboardComponent';
 import { CookieComponent } from './15-20-custom-hooks/24-useCookie/CookieComponent';
 import { TranslationComponent } from './15-20-custom-hooks/25-useTranslation/TranslationComponent';
+import { OnlineStatusComponent } from './15-20-custom-hooks/26-useOnlineStatus/OnlineStatusComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -262,6 +263,11 @@ export const router: Record<string, RouteItem> = {
   useTranslation: {
     path: '/useTranslation',
     Element: TranslationComponent,
+    customHook: true,
+  },
+  useOnlineStatus: {
+    path: '/useOnlineStatus',
+    Element: OnlineStatusComponent,
     customHook: true,
   },
 };
