@@ -22,6 +22,7 @@ import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceCo
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
 import { PreviousComponent } from './15-20-custom-hooks/6-usePrevious/PreviousComponent';
+import { StateWithHistoryComponent } from './15-20-custom-hooks/7-useStateWithHistory/StateWithHistoryComponent';
 import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
 
@@ -148,6 +149,11 @@ export const router: Record<string, RouteItem> = {
   usePrevious: {
     path: '/usePrevious',
     Element: PreviousComponent,
+    customHook: true,
+  },
+  useStateWithHistory: {
+    path: '/useStateWithHistory',
+    Element: StateWithHistoryComponent,
     customHook: true,
   },
 };
