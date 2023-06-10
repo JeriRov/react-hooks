@@ -37,6 +37,7 @@ import { TranslationComponent } from './15-20-custom-hooks/25-useTranslation/Tra
 import { OnlineStatusComponent } from './15-20-custom-hooks/26-useOnlineStatus/OnlineStatusComponent';
 import { RenderCountComponent } from './15-20-custom-hooks/27-useRenderCount/RenderCountComponent';
 import { DebugInformationComponent } from './15-20-custom-hooks/28-useDebugInformation/DebugInformationComponent';
+import { HoverComponent } from './15-20-custom-hooks/29-useHover/HoverComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -280,6 +281,11 @@ export const router: Record<string, RouteItem> = {
   useDebugInformation: {
     path: '/useDebugInformation',
     Element: DebugInformationComponent,
+    customHook: true,
+  },
+  useHover: {
+    path: '/useHover',
+    Element: HoverComponent,
     customHook: true,
   },
 };
