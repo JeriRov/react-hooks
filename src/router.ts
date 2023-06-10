@@ -31,6 +31,7 @@ import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutCompo
 import { EffectOnceComponent } from './15-20-custom-hooks/20-useEffectOnce/EffectOnceComponent';
 import { ClickOutsideComponent } from './15-20-custom-hooks/21-useClickOutside/ClickOutsideComponent';
 import { DarkModeComponent } from './15-20-custom-hooks/22-useDarkMode/DarkModeComponent';
+import { CopyToClipboardComponent } from './15-20-custom-hooks/23-useCopyToClipboard/CopyToClipboardComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -244,6 +245,11 @@ export const router: Record<string, RouteItem> = {
   useDarkMode: {
     path: '/useDarkMode',
     Element: DarkModeComponent,
+    customHook: true,
+  },
+  useCopyToClipboard: {
+    path: '/useCopyToClipboard',
+    Element: CopyToClipboardComponent,
     customHook: true,
   },
 };
