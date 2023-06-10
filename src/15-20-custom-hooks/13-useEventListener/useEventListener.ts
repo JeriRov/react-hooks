@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react';
 
+import { EventListenerElement } from './useEventListener.types';
+
 export const useEventListener = <T>(
   eventType: string,
   callback: (event: T) => void,
-  element: HTMLElement | Window | MediaQueryList | Document = window,
+  element: EventListenerElement = window,
 ): void => {
   const callbackRef = useRef(callback);
 
