@@ -24,6 +24,7 @@ import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
 import { PreviousComponent } from './15-20-custom-hooks/6-usePrevious/PreviousComponent';
 import { StateWithHistoryComponent } from './15-20-custom-hooks/7-useStateWithHistory/StateWithHistoryComponent';
 import { StorageComponent } from './15-20-custom-hooks/8-useStorage/StorageComponent';
+import { AsyncComponent } from './15-20-custom-hooks/9-useAsync/AsyncComponent';
 import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
 
@@ -160,6 +161,11 @@ export const router: Record<string, RouteItem> = {
   useStorage: {
     path: '/useStorage',
     Element: StorageComponent,
+    customHook: true,
+  },
+  useAsync: {
+    path: '/useAsync',
+    Element: AsyncComponent,
     customHook: true,
   },
 };
