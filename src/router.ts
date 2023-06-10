@@ -39,6 +39,7 @@ import { RenderCountComponent } from './15-20-custom-hooks/27-useRenderCount/Ren
 import { DebugInformationComponent } from './15-20-custom-hooks/28-useDebugInformation/DebugInformationComponent';
 import { HoverComponent } from './15-20-custom-hooks/29-useHover/HoverComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
+import { LongPressComponent } from './15-20-custom-hooks/30-useLongPress.js/LongPressComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
 import { PreviousComponent } from './15-20-custom-hooks/6-usePrevious/PreviousComponent';
@@ -286,6 +287,11 @@ export const router: Record<string, RouteItem> = {
   useHover: {
     path: '/useHover',
     Element: HoverComponent,
+    customHook: true,
+  },
+  useLongPress: {
+    path: '/useLongPress',
+    Element: LongPressComponent,
     customHook: true,
   },
 };
