@@ -29,6 +29,7 @@ import { StateWithValidationComponent } from './15-20-custom-hooks/18-useStateWi
 import { SizeComponent } from './15-20-custom-hooks/19-useSize/SizeComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { EffectOnceComponent } from './15-20-custom-hooks/20-useEffectOnce/EffectOnceComponent';
+import { ClickOutsideComponent } from './15-20-custom-hooks/21-useClickOutside/ClickOutsideComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -232,6 +233,11 @@ export const router: Record<string, RouteItem> = {
   useEffectOnce: {
     path: '/useEffectOnce',
     Element: EffectOnceComponent,
+    customHook: true,
+  },
+  useClickOutside: {
+    path: '/useClickOutside',
+    Element: ClickOutsideComponent,
     customHook: true,
   },
 };
