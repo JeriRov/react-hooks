@@ -21,6 +21,7 @@ import { FetchComponent } from './15-20-custom-hooks/10-useFetch/FetchComponent'
 import { ScriptComponent } from './15-20-custom-hooks/11-useScript/ScriptComponent';
 import { DeepCompareEffectComponent } from './15-20-custom-hooks/12-useDeepCompareEffect/DeepCompareEffectComponent';
 import { EventListenerComponent } from './15-20-custom-hooks/13-useEventListener/EventListenerComponent';
+import { OnScreenComponent } from './15-20-custom-hooks/14-useOnScreen/OnScreenComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -190,6 +191,11 @@ export const router: Record<string, RouteItem> = {
   useEventListener: {
     path: '/useEventListener',
     Element: EventListenerComponent,
+    customHook: true,
+  },
+  useOnScreen: {
+    path: '/useOnScreen',
+    Element: OnScreenComponent,
     customHook: true,
   },
 };
