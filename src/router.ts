@@ -19,6 +19,7 @@ import { CreateCustomHook } from './14-how-to-create-custom-hooks/CreateCustomHo
 import { ToggleComponent } from './15-20-custom-hooks/1-useToggle/ToggleComponent';
 import { FetchComponent } from './15-20-custom-hooks/10-useFetch/FetchComponent';
 import { ScriptComponent } from './15-20-custom-hooks/11-useScript/ScriptComponent';
+import { DeepCompareEffectComponent } from './15-20-custom-hooks/12-useDeepCompareEffect/DeepCompareEffectComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -178,6 +179,11 @@ export const router: Record<string, RouteItem> = {
   useScript: {
     path: '/useScript',
     Element: ScriptComponent,
+    customHook: true,
+  },
+  useDeepCompareEffect: {
+    path: '/useDeepCompareEffect',
+    Element: DeepCompareEffectComponent,
     customHook: true,
   },
 };
