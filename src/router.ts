@@ -35,6 +35,7 @@ import { CopyToClipboardComponent } from './15-20-custom-hooks/23-useCopyToClipb
 import { CookieComponent } from './15-20-custom-hooks/24-useCookie/CookieComponent';
 import { TranslationComponent } from './15-20-custom-hooks/25-useTranslation/TranslationComponent';
 import { OnlineStatusComponent } from './15-20-custom-hooks/26-useOnlineStatus/OnlineStatusComponent';
+import { RenderCountComponent } from './15-20-custom-hooks/27-useRenderCount/RenderCountComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
 import { ArrayComponent } from './15-20-custom-hooks/5-useArray/ArrayComponent';
@@ -268,6 +269,11 @@ export const router: Record<string, RouteItem> = {
   useOnlineStatus: {
     path: '/useOnlineStatus',
     Element: OnlineStatusComponent,
+    customHook: true,
+  },
+  useRenderCount: {
+    path: '/useRenderCount',
+    Element: RenderCountComponent,
     customHook: true,
   },
 };
