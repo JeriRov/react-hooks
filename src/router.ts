@@ -17,6 +17,8 @@ import { UseImperativeHandle } from './12-useImperativeHandle/UseImperativeHandl
 import { UseId } from './13-useId/UseId';
 import { CreateCustomHook } from './14-how-to-create-custom-hooks/CreateCustomHook';
 import { ToggleComponent } from './15-20-custom-hooks/1-useToggle/ToggleComponent';
+import { FetchComponent } from './15-20-custom-hooks/10-useFetch/FetchComponent';
+import { ScriptComponent } from './15-20-custom-hooks/11-useScript/ScriptComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -27,7 +29,6 @@ import { StorageComponent } from './15-20-custom-hooks/8-useStorage/StorageCompo
 import { AsyncComponent } from './15-20-custom-hooks/9-useAsync/AsyncComponent';
 import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
-import {FetchComponent} from "./15-20-custom-hooks/10-useFetch/FetchComponent";
 
 interface RouteItem {
   path: string;
@@ -172,6 +173,11 @@ export const router: Record<string, RouteItem> = {
   useFetch: {
     path: '/useFetch',
     Element: FetchComponent,
+    customHook: true,
+  },
+  useScript: {
+    path: '/useScript',
+    Element: ScriptComponent,
     customHook: true,
   },
 };
