@@ -27,6 +27,7 @@ import { StorageComponent } from './15-20-custom-hooks/8-useStorage/StorageCompo
 import { AsyncComponent } from './15-20-custom-hooks/9-useAsync/AsyncComponent';
 import { CustomHooks } from './15-20-custom-hooks/CustomHooks';
 import { Main } from './Main/Main';
+import {FetchComponent} from "./15-20-custom-hooks/10-useFetch/FetchComponent";
 
 interface RouteItem {
   path: string;
@@ -166,6 +167,11 @@ export const router: Record<string, RouteItem> = {
   useAsync: {
     path: '/useAsync',
     Element: AsyncComponent,
+    customHook: true,
+  },
+  useFetch: {
+    path: '/useFetch',
+    Element: FetchComponent,
     customHook: true,
   },
 };
