@@ -25,6 +25,7 @@ import { OnScreenComponent } from './15-20-custom-hooks/14-useOnScreen/OnScreenC
 import { WindowSizeComponent } from './15-20-custom-hooks/15-useWindowSize/WindowSizeComponent';
 import { MediaQueryComponent } from './15-20-custom-hooks/16-useMediaQuery/MediaQueryComponent';
 import { GeolocationComponent } from './15-20-custom-hooks/17-useGeolocation/GeolocationComponent';
+import { StateWithValidationComponent } from './15-20-custom-hooks/18-useStateWithValidation/StateWithValidationComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -214,6 +215,11 @@ export const router: Record<string, RouteItem> = {
   useGeolocation: {
     path: '/useGeolocation',
     Element: GeolocationComponent,
+    customHook: true,
+  },
+  useStateWithValidation: {
+    path: '/useStateWithValidation',
+    Element: StateWithValidationComponent,
     customHook: true,
   },
 };
