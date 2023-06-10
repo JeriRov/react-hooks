@@ -26,6 +26,7 @@ import { WindowSizeComponent } from './15-20-custom-hooks/15-useWindowSize/Windo
 import { MediaQueryComponent } from './15-20-custom-hooks/16-useMediaQuery/MediaQueryComponent';
 import { GeolocationComponent } from './15-20-custom-hooks/17-useGeolocation/GeolocationComponent';
 import { StateWithValidationComponent } from './15-20-custom-hooks/18-useStateWithValidation/StateWithValidationComponent';
+import { SizeComponent } from './15-20-custom-hooks/19-useSize/SizeComponent';
 import { TimeoutComponent } from './15-20-custom-hooks/2-useTimeout/TimeoutComponent';
 import { DebounceComponent } from './15-20-custom-hooks/3-useDebounce/DebounceComponent';
 import { UpdateEffectComponent } from './15-20-custom-hooks/4-useUpdateEffect/UpdateEffectComponent';
@@ -220,6 +221,11 @@ export const router: Record<string, RouteItem> = {
   useStateWithValidation: {
     path: '/useStateWithValidation',
     Element: StateWithValidationComponent,
+    customHook: true,
+  },
+  useSize: {
+    path: '/useSize',
+    Element: SizeComponent,
     customHook: true,
   },
 };
